@@ -6,11 +6,11 @@ Developed an online website calendar that allows users to keep track of upcoming
 Coded using HTML, CSS, and MySQL.
 
 
-In just a sentence or two, summarize your project. (E.g., "A website that lets you buy and sell stocks.")
+# In just a sentence or two, summarize your project. (E.g., "A website that lets you buy and sell stocks.")
 
 A website that lets you keep track of sneaker releases you are interested in.
 
-In a paragraph or more, detail your project. What will your software do? What features will it have? How will it be executed?
+# In a paragraph or more, detail your project. What will your software do? What features will it have? How will it be executed?
 
 Our software will allow the user to keep a running log of the upcoming sneaker releases they are interested in.
 It will require users to create an account and login so that each sneaker log is personal to that user.
