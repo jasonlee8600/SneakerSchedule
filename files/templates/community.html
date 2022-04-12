@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Community
+{% endblock %}
+
+{% block main %}
+    <!-- Community page that shows the shoes of the other users on the site -->
+    <h1>Community</h1>
+    <br>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Brand</th>
+                <th>Model</th>
+                <th>Colorway</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in community %}
+                <tr>
+                    <td>{{ row.username }}</td>
+                    <td>{{ row.brand }}</td>
+                    <td>{{ row.model }}</td>
+                    <td>{{ row.colorway }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

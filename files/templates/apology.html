@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Apology
+{% endblock %}
+
+{% block main %}
+    <!-- Renders an apology image with error message if user does something wrong or website bugs out -->
+    <img style="width:500px;height:500px;" alt="{{ top }}" class="border" src="http://memegen.link/custom/{{ top | urlencode }}/{{ bottom | urlencode }}.jpg?background=https://i.dlpng.com/static/png/1515810-red-paint-brushes-paint-clipart-red-cross-on-png-image-and-clipart-red-cross-png-650_651_preview.png" title="{{ top }}">
+{% endblock %}

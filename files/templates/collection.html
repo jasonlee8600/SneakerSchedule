@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Collection
+{% endblock %}
+
+{% block main %}
+    <!-- Collection page that shows all the shoes the user owns and inputted -->
+    <h1>Collection</h1>
+    <br>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Brand</th>
+                <th>Model</th>
+                <th>Colorway</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in collection %}
+                <tr>
+                    <td>{{ row.brand }}</td>
+                    <td>{{ row.model }}</td>
+                    <td>{{ row.colorway }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

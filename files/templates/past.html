@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Past Releases
+{% endblock %}
+
+{% block main %}
+    <!-- Past Releases page that shows users interested releases that have already passed-->
+    <h1>Past Releases</h1>
+    <br>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Brand</th>
+                <th>Model</th>
+                <th>Colorway</th>
+                <th>Release Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in past %}
+                <tr>
+                    <td>{{ row.brand }}</td>
+                    <td>{{ row.model }}</td>
+                    <td>{{ row.colorway }}</td>
+                    <td>{{ row.date }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

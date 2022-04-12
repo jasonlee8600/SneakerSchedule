@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Upcoming Releases
+{% endblock %}
+
+{% block main %}
+    <!-- Upcoming Releases page that shows all the releases user inputted and is interested in -->
+    <h1>Upcoming Releases</h1>
+    <br>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Brand</th>
+                <th>Model</th>
+                <th>Colorway</th>
+                <th>Release Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in releases %}
+                <tr>
+                    <td>{{ row.brand }}</td>
+                    <td>{{ row.model }}</td>
+                    <td>{{ row.colorway }}</td>
+                    <td>{{ row.date }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
